@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8">
+      <link href="css/home.css" rel="stylesheet">
+      <!--Import Google Icon Font-->
+      <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+      <script src="//cdn.jsdelivr.net/pouchdb/5.1.0/pouchdb.min.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/home.js"></script>
+    <title>Projekt Sheet</title>
+  </head>
+  <body>
+        <nav class="grey lighten-3">
+            <div class="nav-wrapper container">
+              <a href="/index.html" class="brand-logo center" id="divlogo"><img src="images/Icon.png"></a>
+              <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+              <ul id="nav-mobile" class="left hide-on-med-and-down">
+                <li><a href="/index.html" class="grey-text text-darken-4">Home</a></li>
+                <li><a href="/meinesheets.html" class="grey-text text-darken-4">Meine Sheets</a></li>
+                <li class="active"><a href="" class="grey-text text-darken-4">New Sheet</a></li>
+              </ul>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><a href="#" class="grey-text text-darken-4">FAQ</a></li>
+                <li><a href="#" class="grey-text text-darken-4">Bugreport</a></li>
+                <li><a href="#" class="grey-text text-darken-4">Abmelden</a></li>
+              </ul>
+              <ul class="side-nav" id="mobile-demo">
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/meinesheets.html">Meine Sheets</a></li>
+                <li><a href="">New Sheet</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Bugreport</a></li>
+                <li><a href="#">Abmelden</a></li>
+              </ul>
+            </div>
+        </nav>
+        <div div class="row">
+        
+        </div>
+        <div class="row">
+            <form class="col s12">
+              <div class="row">
+                <div class="input-field col s8">
+                  <input id="CatNoCD" type="text">
+                  <label for="CatNoCD">Cat.No. CD</label>
+                </div>
+                <div class="input-field col s2">
+                    <label for="Eingang">Eingang</label>
+                    <input id="Eingang" type="date" class="datepicker">
+                </div>
+                <div class="col s2">
+                  <label>Engineer</label>
+                  <select class="browser-default s2" id="Engineer">
+                    <option value="" disabled selected>Wähle einen Engineer</option>
+                    <option value="1">Bo</option>
+                    <option value="2">Lupo</option>
+                    <option value="3">...</option>
+                  </select>
+                  </div>
+              </div>
+              <div class="row">
+                <div class="input-field col s8">
+                  <input id="CatNoLP" type="text">
+                  <label for="CatNoLP">Cat.No. LP</label>
+                </div>
+                <div class="input-field col s2">
+                    <label for="Fertigstellung">Fertigstellung geplant</label>
+                    <input id="Fertigstellung" type="date" class="datepicker">
+                </div>
+                <div class="col s2">
+                  <label>Projektordner</label>
+                  <select class="browser-default s2" id="Projektordner">
+                    <option value="" disabled selected>Wähle einen Projektordner</option>
+                    <option value="1">C1</option>
+                    <option value="2">C2</option>
+                    <option value="3">C3</option>
+                  </select>
+                  </div>
+              </div>
+              <div class="row">
+                <div class="input-field col s8">
+                  <input id="CatNoMx" type="text">
+                  <label for="CatNoMx">Cat.No. Mx</label>
+                </div>
+                <div class="input-field col s2">
+                    <p>
+                      <input type="checkbox" class="filled-in" id="MON"/>
+                      <label for="MON">MON</label>
+                    </p>
+                </div>
+                <div class="input-field col s2">
+                    <p>
+                      <input type="checkbox" class="filled-in" id="PMX"/>
+                      <label for="PMX">PMX</label>
+                    </p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="input-field col s6">
+                  <input id="Artist_titel" type="text">
+                  <label for="Artist_title">Artist_title</label>
+                </div>
+                <div class="input-field col s6">
+                  <input id="LableClient" type="text">
+                  <label for="LableClient">Label/Client</label>
+                </div>
+              </div>
+              <div>
+                <a class="waves-effect waves-light btn-large" id="submitbutton"><i class="material-icons right">send</i>Abschicken</a>
+              </div>
+            </form>
+          </div>
+        <footer class="page-footer grey darken-3">
+          <div class="container">
+            <div class="row">
+              <div class="col l6 s12">
+                <h5 class="white-text">Projekt Sheets</h5>
+                <p class="grey-text text-lighten-4"></p>
+              </div>
+              <div class="col l4 offset-l2 s12">
+                <h5 class="white-text">Links</h5>
+                <ul>
+                  <li><a class="grey-text text-lighten-3" href="#!">Home</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">FAQ</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">Bugreport</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="footer-copyright">
+            <div class="container">
+            © 2015 Copyright Bo Kern
+            </div>
+          </div>
+      <!--Import jQuery before materialize.js-->
+      <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+      <script type="text/javascript" src="js/materialize.min.js"></script>
+      <script src="js/app.js"></script>
+      <script src="js/home.js"></script>
+  </body>
+</html>

@@ -1,0 +1,50 @@
+#bg{
+    background-color: #eaeaea;
+}
+
+.nahv{
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.nahv-obj{
+    float: left;
+    min-width: 100px;
+    height: 83px;
+    text-align: center;
+}
+
+.nahv-obj a{
+    font: 500 14px Roboto;
+    margin-top: 30px;
+    text-transform: uppercase;
+    display: block;
+}
+
+.activeee{
+    background-color: #a0a0a0;
+}
+
+#divlogo{
+    height: 64px;
+    width: 350px;
+    background-color: #4c4c4c;
+}
+
+#divlogo img{
+    margin-top: 5px;
+    height: 55px;
+}
+
+#sync-error, #sync-success {
+  display: none;
+}
+
+[data-sync-state=syncing] #sync-success {
+  display: block;
+}
+
+[data-sync-state=error] #sync-error {
+  display: block;
+}
